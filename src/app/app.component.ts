@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { robot } from './robot';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Robots-Directory';
+  robosListner: robot[];
+
+  callRobotFunction(value: any){
+    this.robosListner = value;
+    console.log("==>Listening");
+  }
 }

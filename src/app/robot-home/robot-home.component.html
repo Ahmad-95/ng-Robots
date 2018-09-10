@@ -1,0 +1,17 @@
+<div *ngIf="robo">
+    <div class="col-12">
+        <div class="card">
+          <img class="card-img-top" src="https://robohash.org/{{robo.username}}" />
+          <div class="card-body">
+            <p>
+              <b>Robo Id:</b>{{ robo.id }} </p>
+            <p>
+              <b>Robo Name:</b>{{ robo.name }}</p>
+            <p>
+              <b>Robo Username:</b>{{ robo.username }}</p>
+            <p>
+              <b>Robo Email:</b>{{ robo.email }}</p>
+          </div>
+        </div>
+      </div>
+</div>

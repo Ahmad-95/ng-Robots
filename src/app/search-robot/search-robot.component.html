@@ -1,0 +1,10 @@
+
+<nav class="navbar navbar-dark bg-light">
+    <a class="navbar-brand">Robots Directory</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-1" #searchBox 
+      (keyup)="onSearchInput(searchBox.value)" type="search" placeholder="Enter a username" aria-label="Search"
+      />
+    </form>
+  </nav>
+  <br/>
